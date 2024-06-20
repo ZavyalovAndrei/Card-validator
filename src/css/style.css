@@ -1,0 +1,131 @@
+.card-form-widget {
+    width: 300px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.42857143;
+    color: #333;
+    margin-left:  40px;
+}
+.cards {
+    display: flex;
+    width: 100;
+    height: 25px;
+    padding-inline-start: 0;
+}
+.card {
+    background-position: 0 -25px;
+    float: left;
+    width: 39px;
+    height: 25px;
+    text-indent: -9999px;
+    margin-right: 4px;
+}
+li {
+    list-style-type: none;
+}
+.card.visa {
+    background-image: url('../img/visa.gif');
+}
+.card.mir {
+    background-image: url('../img/mir.gif');
+}
+.card.mastercard {
+    background-image: url('../img/mastercard.gif');
+}
+.card.amex {
+    background-image: url('../img/amex.gif');
+}
+.card.discover {
+    background-image: url('../img/discover.gif');
+}
+.card.jcb {
+    background-image: url('../img/jcb.gif');
+}
+.card.diners_club {
+    background-image: url('../img/diners.gif');
+}
+
+.input {
+    width: 65%;
+    text-align: center;
+    font-size: 10px;
+    height: 15px;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+.field {
+    display: flex;
+    min-width: 100%;
+    text-align: left;
+}
+.submit {
+    box-sizing: content-box;
+    min-width: 30%;
+    color: #fff;
+    font-size: inherit;
+    background-color: #5cb85c;
+    border-radius: 3px;
+    border: #4cae4c solid 1px;
+    border-color: #4cae4c;
+    cursor: pointer;
+}
+
+.input.valid {
+    border-color: springgreen;
+    background-color: lightgreen;
+}
+
+.input.invalid {
+    border-color: crimson;
+    background-color: lightpink;
+}
+
+.message:before{
+	content: "";
+    position: absolute;
+    left: 135px;
+    top: 70px;
+    width: 0;
+    height: 0;
+    border-right: 4px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+.message_container {
+    margin-top: 5px;
+    display: block;
+    align-items: center;
+    width: 64%;
+}
+
+.message {
+    display: block;
+    height: 15px;
+    font-size: 10px;
+    color: #fff;
+    align-items: center;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.message.valid {
+    background-color: springgreen;
+}
+
+.message.valid:before{
+    border-bottom-color: springgreen;
+}
+
+.message.invalid{
+    background-color: crimson;
+}
+
+.message.invalid:before{
+    border-bottom-color:  crimson;
+}
+
+.active {
+background-position: 0 0;
+}
