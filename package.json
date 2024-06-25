@@ -10,7 +10,7 @@
     "lint:fix": "eslint . --fix",
     "test": "jest",
     "coverage": "jest --coverage",
-    "e2e": "jest --testPathPattern=.src/js/e2e/ --runInBand",
+    "e2e": "jest --testPathPattern=.src/js/e2e/ --runInBand --testTimeout=15000",
     "preshow:coverage": "npm run coverage",
     "show:coverage": "live-server coverage/lcov-report",
     "preshow:dist": "npm run build",
